@@ -2,6 +2,13 @@ package calculator;
 
 public class Application {
     public static void main(String[] args) {
-        // TODO: 프로그램 구현
+        StringInput stringInput = new StringInput();
+        String input = stringInput.getInput();
+
+        // 빈 입력 처리
+        if (input == null || input.isEmpty()) {
+            System.out.println("결과: 0");
+            return;
+        }
     }
 }
